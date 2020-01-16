@@ -3,14 +3,20 @@
   "name": "react-movie-list",
   "version": "0.1.0",
   "private": true,
+  "resolutions": {
+    "serialize-javascript": "^2.1.1"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "core-js": "^3.6.4",
+    "cors": "^2.8.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -23,6 +29,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
       ">0.2%",
