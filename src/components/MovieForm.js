@@ -25,8 +25,11 @@ export const MovieForm = ({ onNewMovie }) => {
             </Form.Field>
             <Form.Field>
                 <Button
+                    //Asynchronous functions always return promises
                     onClick={async () => {
                         const movie = { title, rating }
+                        // await keyword lets you wait for the promise to resolve
+                        //use try/catch normally
                         const response = await fetch('http://localhost:5000/add_movie', {
                             method: 'POST',
                             headers: {
